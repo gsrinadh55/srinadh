@@ -1577,7 +1577,26 @@ footer {
   }
 
   nav {
+    flex: 1;
+    overflow: hidden;
+    margin: 0 1rem;
+  }
+
+  .nav-links {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 1.5rem;
+    white-space: nowrap;
+    padding: 4px 0;
+  }
+
+  .nav-links::-webkit-scrollbar {
     display: none;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
   }
 
   .menu-btn {
@@ -1663,8 +1682,16 @@ footer {
     font-size: 1.1rem;
   }
 
+  nav {
+    display: none;
+  }
+
   .nav-cta .btn-secondary {
     display: none;
+  }
+
+  .nav-cta {
+    gap: 0.75rem;
   }
 
   .hero {
