@@ -1285,12 +1285,19 @@ footer {
 
 /* --- Light Mode Specific Components Override --- */
 .light-mode .glass-card {
-  background: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03), 0 0 1px 1px var(--border-color);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06), 0 0 1px 1px rgba(0, 0, 0, 0.04);
 }
 
 .light-mode .glass-card:hover {
-  box-shadow: 0 20px 45px rgba(79, 70, 229, 0.08), 0 0 1px 1px var(--accent-primary);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 35px rgba(79, 70, 229, 0.1), 0 0 1px 1px rgba(79, 70, 229, 0.2);
+  border-color: rgba(79, 70, 229, 0.2);
+}
+
+.light-mode .glass-card::before {
+  background: radial-gradient(300px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(79, 70, 229, 0.06), transparent 80%);
 }
 
 .light-mode .mobile-nav {
@@ -1298,15 +1305,148 @@ footer {
 }
 
 .light-mode .form-control {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(243, 244, 246, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #111827;
+}
+
+.light-mode .form-control::placeholder {
+  color: #9ca3af;
+}
+
+.light-mode .form-control:focus {
+  background: #ffffff;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
 .light-mode .btn-secondary {
   background: var(--bg-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .light-mode .btn-secondary:hover {
   background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Light mode stat numbers - dark gradient for visibility */
+.light-mode .stat-number {
+  background: linear-gradient(135deg, #111827 30%, var(--accent-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Light mode stat cards */
+.light-mode .stat-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Light mode skill tags */
+.light-mode .skill-tag {
+  background: rgba(243, 244, 246, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #374151;
+}
+
+.light-mode .skill-tag:hover {
+  background: rgba(79, 70, 229, 0.08);
+  border-color: rgba(79, 70, 229, 0.25);
+  color: #4f46e5;
+}
+
+/* Light mode project tech tags */
+.light-mode .project-tech span {
+  background: rgba(243, 244, 246, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: var(--text-secondary);
+}
+
+/* Light mode testimonial avatars */
+.light-mode .testimonial-avatar {
+  background: rgba(79, 70, 229, 0.08);
+  border-color: rgba(79, 70, 229, 0.15);
+}
+
+/* Light mode filter buttons */
+.light-mode .filter-btn {
+  color: var(--text-secondary);
+}
+
+.light-mode .filter-btn.active,
+.light-mode .filter-btn:hover {
+  background: rgba(79, 70, 229, 0.08);
+  color: #4f46e5;
+}
+
+.light-mode .project-filters {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Light mode toast */
+.light-mode .toast {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: #111827;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode scrollbar */
+.light-mode ::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+.light-mode ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.light-mode ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Light mode tagline badge */
+.light-mode .tagline-badge {
+  background: rgba(79, 70, 229, 0.06);
+  color: #7c3aed;
+  border-color: rgba(124, 58, 237, 0.2);
+}
+
+/* Light mode contact icons */
+.light-mode .contact-icon {
+  background: rgba(79, 70, 229, 0.06);
+  border-color: rgba(79, 70, 229, 0.15);
+}
+
+/* Light mode why-check */
+.light-mode .why-check {
+  background: rgba(5, 150, 105, 0.08);
+}
+
+/* Light mode project icon */
+.light-mode .project-icon-wrapper {
+  background: rgba(79, 70, 229, 0.06);
+  border-color: rgba(79, 70, 229, 0.15);
+}
+
+/* Light mode service icon */
+.light-mode .service-icon-box {
+  background: rgba(124, 58, 237, 0.06);
+  border-color: rgba(124, 58, 237, 0.15);
+}
+
+/* Light mode featured badge */
+.light-mode .project-featured-badge {
+  background: rgba(5, 150, 105, 0.06);
+  border-color: rgba(5, 150, 105, 0.2);
+}
+
+/* Light mode selection */
+.light-mode ::selection {
+  background: rgba(79, 70, 229, 0.2);
+  color: #111827;
 }
 
 .light-mode .profile-frame {
@@ -1319,6 +1459,12 @@ footer {
 
 .light-mode .profile-frame::after {
   background: linear-gradient(180deg, transparent 60%, rgba(252, 252, 252, 0.8) 100%);
+}
+
+/* Light mode footer */
+.light-mode footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 /* --- Typing Cursor --- */
