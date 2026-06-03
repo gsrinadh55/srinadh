@@ -1050,6 +1050,11 @@ header.scrolled {
   gap: 4px;
 }
 
+.testimonial-rating svg {
+  fill: #fbbf24;
+  stroke: #fbbf24;
+}
+
 .testimonial-text {
   color: var(--text-secondary);
   font-size: 0.95rem;
