@@ -231,14 +231,40 @@ document.addEventListener('DOMContentLoaded', () => {
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
       
-      // Simulate loading state
+      const nameVal = document.getElementById('name').value;
+      const emailVal = document.getElementById('email').value;
+      const phoneVal = document.getElementById('phone').value;
+      const messageVal = document.getElementById('message').value;
+      
+      // Show loading state
       submitBtn.disabled = true;
       submitBtn.innerHTML = `
-        <span class="logo-dot" style="position: static; display: inline-block;"></span>
+        <span class="logo-dot" style="position: static; display: inline-block; animation: pulse 1s infinite;"></span>
         <span>Sending...</span>
       `;
 
-      setTimeout(() => {
+      // Submit via FormSubmit AJAX endpoint
+      fetch("https://formsubmit.co/ajax/gsrinadh55@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Name: nameVal,
+          Email: emailVal,
+          Phone: phoneVal,
+          Message: messageVal,
+          _subject: `New Portfolio Lead from ${nameVal}`
+        })
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Network response was not ok.');
+      })
+      .then(data => {
         // Reset form
         contactForm.reset();
         
@@ -247,8 +273,18 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.innerHTML = originalText;
         
         // Trigger premium notification toast
-        showToast("Message received successfully! I will reach out shortly.");
-      }, 1500);
+        showToast("Message sent successfully! I will email you back shortly.");
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        
+        // Reset submit button
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        
+        // Trigger fallback alert / toast
+        showToast("Oops! Something went wrong. Please try emailing me directly at gsrinadh55@gmail.com.");
+      });
     });
   }
 });
