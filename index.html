@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gudipati Srinadh | Full Stack Developer, AI Automation Builder & SaaS Specialist</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Gudipati Srinadh, a premium Full Stack Developer, AI Automation Builder, and SaaS Developer. Helping businesses build scalable applications and automated workflows.">
+  <meta name="keywords" content="Full Stack Developer, Web Developer, Automation Specialist, AI Developer, SaaS Developer, Freelance Developer, Gudipati Srinadh">
+  <meta name="author" content="Gudipati Srinadh">
+  
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gudipati Srinadh | Full Stack Developer & AI Automation Builder">
+  <meta property="og:description" content="Building modern websites, scalable AI integrations, and high-growth SaaS applications.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Interactive Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Premium Radial & Grid Background Effects -->
+  <div class="bg-grid-overlay"></div>
+  <div class="bg-radial-glow"></div>
+
+  <!-- Header Navigation -->
+  <header id="header">
+    <a href="#" class="logo">
+      <span>SRINADH</span>
+      <span class="logo-dot"></span>
+    </a>
+    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about" class="hover-target">About</a></li>
+        <li><a href="#skills" class="hover-target">Skills</a></li>
+        <li><a href="#projects" class="hover-target">Projects</a></li>
+        <li><a href="#services" class="hover-target">Services</a></li>
+        <li><a href="#contact" class="hover-target">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="nav-cta">
+      <button class="theme-toggle hover-target" id="themeToggle" aria-label="Toggle Theme">
+        <i data-lucide="sun" class="sun-icon"></i>
+        <i data-lucide="moon" class="moon-icon"></i>
+      </button>
+      <a href="#contact" class="btn btn-secondary hover-target">Let's Talk</a>
+      <button class="menu-btn hover-target" id="menuBtn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar Menu -->
+  <div class="backdrop" id="backdrop"></div>
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Showcase & Sections -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="section-container hero-content">
+        <div class="tagline-badge">
+          <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+          <span>Transforming Ideas Into Powerful Digital Products</span>
+        </div>
+        
+        <h1 class="hero-title reveal active">
+          Building Modern Websites, <span class="gradient-text">AI Solutions</span>, & Business Automation Systems
+        </h1>
+        
+        <p class="hero-subtitle reveal active">
+          I help startups, businesses, and entrepreneurs build scalable web applications, automation systems, and premium digital experiences that drive growth.
+        </p>
+        
+        <div class="hero-actions reveal active">
+          <a href="#projects" class="btn btn-primary hover-target">
+            <span>View My Work</span>
+            <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary hover-target">Let's Talk</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section-container reveal" id="about">
+      <span class="section-label">01 // Story</span>
+      <h2 class="section-title" style="display: inline-flex; align-items: center; min-height: 48px;">
+        <span id="typingAboutTitle"></span><span class="typing-cursor" id="typingCursor">|</span>
+      </h2>
+      
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a results-driven builder specializing in custom software ecosystems that convert operational friction into growth opportunities. My engineering approach centers around standardizing complex processes using modern, responsive web architecture, robust backend APIs, and custom artificial intelligence pipelines.
+          </p>
+          <p>
+            From SaaS development to workflow automation, my goal is to design scalable software solutions that operate automatically, letting business owners focus on strategic growth while technology handles the daily routine.
+          </p>
+          
+          <div class="about-features">
+            <div class="about-feature-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>Full Stack Development</span>
+            </div>
+            <div class="about-feature-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>Automation Solutions</span>
+            </div>
+            <div class="about-feature-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>AI Integration</span>
+            </div>
+            <div class="about-feature-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>SaaS Products</span>
+            </div>
+            <div class="about-feature-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>Business Applications</span>
+            </div>
+            <div class="about-feature-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>Startup Mindset</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="profile-frame">
+            <img src="profile.jpg" alt="Gudipati Srinadh" class="profile-image hover-target">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-container reveal" id="skills">
+      <span class="section-label">02 // Capabilities</span>
+      <h2 class="section-title">My Tech Ecosystem</h2>
+      
+      <div class="skills-container">
+        <!-- Frontend -->
+        <div class="glass-card">
+          <h3 class="skills-category-title">
+            <i data-lucide="layout"></i>
+            <span>Frontend</span>
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag hover-target">HTML</span>
+            <span class="skill-tag hover-target">CSS</span>
+            <span class="skill-tag hover-target">JavaScript</span>
+            <span class="skill-tag hover-target">React</span>
+            <span class="skill-tag hover-target">Next.js</span>
+            <span class="skill-tag hover-target">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- Backend & DB -->
+        <div class="glass-card">
+          <h3 class="skills-category-title">
+            <i data-lucide="database"></i>
+            <span>Backend & Database</span>
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag hover-target">PHP</span>
+            <span class="skill-tag hover-target">Node.js</span>
+            <span class="skill-tag hover-target">REST APIs</span>
+            <span class="skill-tag hover-target">MySQL</span>
+            <span class="skill-tag hover-target">Firebase</span>
+          </div>
+        </div>
+
+        <!-- Automation & Tools -->
+        <div class="glass-card">
+          <h3 class="skills-category-title">
+            <i data-lucide="cpu"></i>
+            <span>AI & Automation</span>
+          </h3>
+          <div class="skills-list">
+            <span class="skill-tag hover-target">AI Integrations</span>
+            <span class="skill-tag hover-target">Workflow Automation</span>
+            <span class="skill-tag hover-target">SaaS Development</span>
+            <span class="skill-tag hover-target">Vercel</span>
+            <span class="skill-tag hover-target">GitHub</span>
+            <span class="skill-tag hover-target">Hostinger</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section-container reveal" id="projects">
+      <div class="projects-header">
+        <div>
+          <span class="section-label">03 // Showcase</span>
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active hover-target" data-filter="all">All</button>
+          <button class="filter-btn hover-target" data-filter="featured">Featured</button>
+          <button class="filter-btn hover-target" data-filter="web">Web Apps</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="glass-card project-card reveal" data-category="featured web">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper">
+              <i data-lucide="home"></i>
+            </div>
+            <span class="project-featured-badge">Featured</span>
+          </div>
+          <h3 class="project-title">Resort Management System</h3>
+          <p class="project-desc">
+            A comprehensive web operational platform designed for resorts to automate scheduling, guest check-ins, custom invoice tracking, and customer management.
+          </p>
+          <div class="project-tech">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>REST API</span>
+          </div>
+          <a href="https://midnightblue-gerbil-714955.hostingersite.com/user/home.php" target="_blank" class="project-link hover-target">
+            <span>Explore Live Site</span>
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card reveal" data-category="web">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper">
+              <i data-lucide="cup-soda"></i>
+            </div>
+          </div>
+          <h3 class="project-title">Monster Drink Landing Page</h3>
+          <p class="project-desc">
+            An immersive, responsive product experience designed to convert. It utilizes high-end aesthetic components, clean grids, and fluid mobile transitions.
+          </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Tailwind CSS</span>
+            <span>Framer Motion</span>
+          </div>
+          <a href="https://monster-drink-xi.vercel.app/" target="_blank" class="project-link hover-target">
+            <span>Explore Live Site</span>
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card reveal" data-category="web">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper">
+              <i data-lucide="shield-check"></i>
+            </div>
+          </div>
+          <h3 class="project-title">Insurance Claims Platform</h3>
+          <p class="project-desc">
+            A secured, enterprise-grade claims portal featuring multi-factor authentication, dynamic status dashboards, and workflow state changes.
+          </p>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+          </div>
+          <a href="https://claims-bice.vercel.app/login" target="_blank" class="project-link hover-target">
+            <span>Explore Live Site</span>
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card project-card reveal" data-category="web">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper">
+              <i data-lucide="sparkles"></i>
+            </div>
+          </div>
+          <h3 class="project-title">Kesar Kosmetics</h3>
+          <p class="project-desc">
+            A modern client-facing corporate site centered around bold visuals, high performance, and smooth animations that strengthen brand value.
+          </p>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>Tailwind CSS</span>
+            <span>Framer Motion</span>
+          </div>
+          <a href="https://kesarkosmetics.com" target="_blank" class="project-link hover-target">
+            <span>Explore Live Site</span>
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-container reveal" id="services">
+      <span class="section-label">04 // Services</span>
+      <h2 class="section-title">Tailored Solutions for Modern Businesses</h2>
+      
+      <div class="services-grid">
+        <div class="glass-card service-card hover-target">
+          <div class="service-icon-box">
+            <i data-lucide="globe"></i>
+          </div>
+          <h3 class="service-title">Website Development</h3>
+          <p class="service-desc">Pixel-perfect, high-performance responsive marketing websites built for speed and aesthetics.</p>
+        </div>
+        
+        <div class="glass-card service-card hover-target">
+          <div class="service-icon-box">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3 class="service-title">Full Stack Development</h3>
+          <p class="service-desc">Robust architectures linking secure databases, functional API backends, and responsive clients.</p>
+        </div>
+        
+        <div class="glass-card service-card hover-target">
+          <div class="service-icon-box">
+            <i data-lucide="cpu"></i>
+          </div>
+          <h3 class="service-title">AI Automation</h3>
+          <p class="service-desc">Integrating large language models and smart automated scripts into existing business operations.</p>
+        </div>
+
+        <div class="glass-card service-card hover-target">
+          <div class="service-icon-box">
+            <i data-lucide="terminal"></i>
+          </div>
+          <h3 class="service-title">Business Software</h3>
+          <p class="service-desc">Custom portals, internal dashboards, and reservation/management tools tailored to your operational needs.</p>
+        </div>
+
+        <div class="glass-card service-card hover-target">
+          <div class="service-icon-box">
+            <i data-lucide="rocket"></i>
+          </div>
+          <h3 class="service-title">SaaS Development</h3>
+          <p class="service-desc">Transforming ideas into subscription products with multi-user setups and payment integrations.</p>
+        </div>
+
+        <div class="glass-card service-card hover-target">
+          <div class="service-icon-box">
+            <i data-lucide="palette"></i>
+          </div>
+          <h3 class="service-title">Landing Page Design</h3>
+          <p class="service-desc">Optimized structures focusing on readability, micro-animations, and high user conversions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Me -->
+    <section class="section-container reveal">
+      <span class="section-label">05 // Guarantee</span>
+      <h2 class="section-title">Why Partner With Me</h2>
+      
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-check">
+            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+          </div>
+          <div class="why-content">
+            <h4>Clean Code</h4>
+            <p>Maintainable, well-structured, and standard codebase that scales without technical debt.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-check">
+            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+          </div>
+          <div class="why-content">
+            <h4>Fast Delivery</h4>
+            <p>Direct iteration pipelines and focused cycles ensure quick time-to-market.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-check">
+            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+          </div>
+          <div class="why-content">
+            <h4>Scalable Architecture</h4>
+            <p>High-load configurations optimized for future growth, integration, and security.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-check">
+            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+          </div>
+          <div class="why-content">
+            <h4>Modern UI/UX</h4>
+            <p>Apple-grade design quality with high user engagement and polished interactions.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-check">
+            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+          </div>
+          <div class="why-content">
+            <h4>Business-Focused</h4>
+            <p>I focus on metrics that matter to you: leads, user retention, conversions, and speed.</p>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-check">
+            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+          </div>
+          <div class="why-content">
+            <h4>Long-Term Support</h4>
+            <p>Continuous monitoring, updates, adjustments, and updates post-launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section-container reveal">
+      <div class="achievements-grid">
+        <div class="glass-card stat-card">
+          <div class="stat-number" data-target="25">0</div>
+          <div class="stat-label">Websites Launched</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-label">AI Automations Built</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">% Customer Satisfaction</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-number" data-target="8">0</div>
+          <div class="stat-label">SaaS Products Shipped</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-container reveal">
+      <span class="section-label">06 // Reviews</span>
+      <h2 class="section-title">Client Experiences</h2>
+      
+      <div class="testimonials-grid">
+        <div class="glass-card testimonial-card hover-target">
+          <div class="testimonial-rating">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Srinadh rebuilt our resort dashboard from the ground up. Automation features cut down checking times by over 40% and improved client satisfaction."
+          </p>
+          <div class="testimonial-user">
+            <div class="testimonial-avatar">A</div>
+            <div class="testimonial-info">
+              <h5>Alex Carter</h5>
+              <span>Operations Director, BlueHaven Resort</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card hover-target">
+          <div class="testimonial-rating">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-text">
+            "His attention to UI aesthetics is outstanding. The landing page for Kesar Kosmetics receives praise from every single one of our clients."
+          </p>
+          <div class="testimonial-user">
+            <div class="testimonial-avatar">P</div>
+            <div class="testimonial-info">
+              <h5>Priya Sharma</h5>
+              <span>Brand Director, Kesar Kosmetics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card hover-target">
+          <div class="testimonial-rating">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Working with Srinadh is a breeze. His understanding of automated workflows saved our team countless hours of manual data entry."
+          </p>
+          <div class="testimonial-user">
+            <div class="testimonial-avatar">M</div>
+            <div class="testimonial-info">
+              <h5>Markus Vance</h5>
+              <span>Founder, ClaimSync Inc.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-container reveal" id="contact">
+      <span class="section-label">07 // Contact</span>
+      <h2 class="section-title">Let's Create Something Great</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <!-- Phone Card -->
+          <div class="glass-card contact-method-card hover-target">
+            <div class="contact-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Call Me</h4>
+              <p><a href="tel:+919154290849">+91 9154290849</a></p>
+            </div>
+          </div>
+          
+          <!-- Email Card -->
+          <div class="glass-card contact-method-card hover-target">
+            <div class="contact-icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email Me</h4>
+              <p><a href="mailto:gsrinadh55@gmail.com">gsrinadh55@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-control hover-target" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-control hover-target" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control hover-target" placeholder="+91 98765 43210">
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-control hover-target" placeholder="How can I help your business grow?" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary hover-target" style="width: 100%;">
+              <span>Send Message</span>
+              <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <span class="logo">
+        <span>SRINADH</span>
+        <span class="logo-dot"></span>
+      </span>
+      <p class="footer-copy">&copy; 2026 Gudipati Srinadh. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" class="hover-target">GitHub</a>
+        <a href="https://www.linkedin.com/in/gudipati-srinadh-ab1451313/" target="_blank" class="hover-target">LinkedIn</a>
+        <a href="mailto:gsrinadh55@gmail.com" class="hover-target">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide CDN for Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Client Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
